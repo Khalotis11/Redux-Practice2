@@ -11,7 +11,9 @@ function App() {
   return (
     <div className="App">
       <div className="nav-bar">
-        <h3>Moroccan | <span className="tourisme">Tourisme</span></h3>
+        <h3>
+          Moroccan | <span className="tourisme">Tourisme</span>
+        </h3>
         <Navigation />
       </div>
       <div>
