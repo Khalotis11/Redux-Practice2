@@ -1,0 +1,9 @@
+.navigation {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-tag {
+  text-decoration: none;
+  color: gray;
+}
