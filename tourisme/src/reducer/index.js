@@ -1,5 +1,5 @@
 const initialState = {
-  tilte: "Welcome To Morocco!"
+  cities: "Casablanca, Marrakech, Chaouent!"
 };
 
 export const reducer = (state = initialState, action) => {

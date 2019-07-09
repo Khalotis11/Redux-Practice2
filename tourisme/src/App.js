@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 
 import { About } from "./components/About";
-import { Home } from "./components/Home";
+import Home from "./components/Home";
 import { Contact } from "./components/Contact";
 import { Route } from "react-router-dom";
 import { Navigation } from "./components/Navigation";
