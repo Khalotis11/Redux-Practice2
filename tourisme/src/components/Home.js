@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { addCities } from "../actions";
 
 class Home extends Component {
   state = {
@@ -19,6 +20,8 @@ class Home extends Component {
           one of the most politically stable countries in North Africa, which
           has allowed tourism to develop.
         </h4>
+        <h1>Update or keep List of Cities to visit!</h1>
+        <h2>{this.props.cities}</h2>
         <input
           type="text"
           name="textInput"
@@ -26,7 +29,9 @@ class Home extends Component {
           value={this.state.textInput}
           onChange={this.handleChange}
         />
-        <button>Add Cities</button>
+        <button onClick={() => this.props.addCities(this.state.textInput)}>
+          Add Cities
+        </button>
       </div>
     );
   }
@@ -38,5 +43,5 @@ const mapStateToProps = state => {
 };
 export default connect(
   mapStateToProps,
-  {}
+  { addCities }
 )(Home);
